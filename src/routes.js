@@ -1,12 +1,12 @@
 const {
-  UserLoginHandler,
+  userLoginHandler,
   getAllScheduleHandler,
   getAllComputerHandler,
   getStatusByIdHandler,
   addBorrowHandler,
   getYourScheduleByIdHandler,
-  AddYourScheduleByIdHandler,
-  DeleteYourScheduleHandler,
+  addYourScheduleByIdHandler,
+  deleteYourScheduleHandler,
   getAllGroupHandler,
   UpdateStatusGroupHandler,
   getNotificationByIdHandler,
@@ -17,7 +17,7 @@ const routes = [
   {
     method: 'POST',
     path: '/login',
-    handler: UserLoginHandler,
+    handler: userLoginHandler,
   },
   {
     method: 'POST',
@@ -47,12 +47,12 @@ const routes = [
   {
     method: 'POST',
     path: '/user/schedule',
-    handler: AddYourScheduleByIdHandler,
+    handler: addYourScheduleByIdHandler,
   },
   {
     method: 'DELETE',
     path: '/user/schedule/{id}',
-    handler: DeleteYourScheduleHandler,
+    handler: deleteYourScheduleHandler,
   },
   {
     method: 'GET',
